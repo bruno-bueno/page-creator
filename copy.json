@@ -1,4 +1,5 @@
 {
+    "checkout_url": "https://go.perfectpay.com.br/PPU38CPRGSA",
     "hero": {
         "title": "<span class=\"highlight\">75 Aulas Prontas</span> de Boxe – Do <br> Zero ao Avançado",
         "subtitle": "Copie e aplique as 75 aulas prontas de Boxe e nunca mais perca horas <br> montando treinos repetitivos e sem graça.",
@@ -58,6 +59,60 @@
         ],
         "cta": "QUERO APROVEITAR",
         "disclaimer": "Seguindo o curso, você <strong>NÃO precisa de:</strong> experiência, materiais caros ou passar horas trabalhando"
+    },
+    "testimonials": {
+        "title": "O QUE NOSSOS ALUNOS <span class=\"highlight-orange\">ESTÃO FALANDO</span>",
+        "subtitle": "Mostrando 10 comentários",
+        "list": [
+            {
+                "name": "Rodrigo Silva",
+                "text": "Antes eu passava horas quebrando a cabeça pra montar aula nova. Agora é só abrir o material e aplicar. Meus alunos estão mais animados, e eu consigo dar o dobro de aulas no mesmo tempo.",
+                "time": "agora",
+                "likes": 24,
+                "image": ""
+            },
+            {
+                "name": "Carlos Rosa",
+                "text": "Eu tava sem ideias pra variar os treinos de boxe funcional. As 75 aulas resolveram isso na hora! Economizei tempo e ainda aumentei minhas turmas. Valeu cada centavo.",
+                "time": "6 min",
+                "likes": 12,
+                "image": ""
+            },
+            {
+                "name": "Márcio Lira",
+                "text": "Material muito prático e direto ao ponto. Me ajudou demais a organizar as aulas da semana.",
+                "time": "15 min",
+                "likes": 8,
+                "image": ""
+            }
+        ],
+        "cta": "QUERO APROVEITAR"
+    },
+    "guarantee_section": {
+        "image": "media/selo-garantia-300x300-1-1.webp",
+        "title": "PRODUTO COM <br> RISCO ZERO!",
+        "subtitle": "O CURSO TEM GARANTIA <br> INCONDICIONAL DE 30 DIAS",
+        "text": [
+            "Você está sob proteção do <strong>Código de Defesa do Consumidor</strong> – LEI Nº 8.078, de 11 de setembro de 1990.",
+            "Se por algum motivo você achar que não é para você ou não se adaptar, basta entrar em contato (Email: contato@75aulasdeboxe.shop) <strong>dentro do prazo de 30 dias</strong> e solicitar o reembolso total do valor investido.",
+            "Você receberá de volta cada centavo que pagou."
+        ]
+    },
+    "footer_details": {
+        "text": "CLIQUE NO BOTÃO ABAIXO <br> PARA GARANTIR <span class=\"highlight-red\">O CURSO <br> COM 89% OFF!</span>",
+        "cta": "QUERO APROVEITAR",
+        "disclaimer": "Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site.",
+        "support": "Suporte: contato@75aulasdeboxe.shop",
+        "links": [
+            {
+                "text": "Política de Privacidade",
+                "url": "#"
+            },
+            {
+                "text": "Termos de Uso",
+                "url": "#"
+            }
+        ]
     },
     "bonus": {
         "title": "Leve 4 Presentes Incríveis",
