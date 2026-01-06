@@ -22,7 +22,7 @@
             <p class="subtitle" id="hero-subtitle"></p>
 
             <div class="mockup-container">
-                <img src="media/BARBEARIA-LUCRATIVA-1024x576.png" alt="75 Aulas de Boxe" class="mockup-img">
+                <img src="" alt="Hero Image" class="mockup-img" id="hero-img">
             </div>
         </div>
     </header>
@@ -38,9 +38,8 @@
             <a href="#" class="cta-button" id="offer-cta"></a>
 
             <div class="security-badges">
-                <img src="media/SITE-SEGURO-img-4946748-20230607164804.webp" alt="Site Seguro e Formas de Pagamento"
-                    class="payment-methods-img">
-                <img src="media/selo-garantia-300x300-1-1.webp" alt="Garantia 30 Dias" class="guarantee-seal-img">
+                <img src="" alt="Site Seguro" class="payment-methods-img" id="offer-badge-security">
+                <img src="" alt="Garantia" class="guarantee-seal-img" id="offer-badge-guarantee">
             </div>
         </div>
     </section>
@@ -77,7 +76,7 @@
     <section class="bonus-section">
         <div class="container">
             <div class="gift-container">
-                <img src="media/wrapped-gift_1f381-1.png" alt="Bônus" class="gift-img">
+                <img src="" alt="Bônus" class="gift-img" id="bonus-gift-img">
             </div>
             <h2 class="section-title bonus-title" id="bonus-title"></h2>
             <p class="section-subtitle bonus-subtitle" id="bonus-subtitle"></p>
@@ -103,7 +102,7 @@
             </ul>
 
             <div class="final-mockup-container">
-                <img src="media/BARBEARIA-LUCRATIVA-1024x576.png" alt="Pacote Completo" class="final-mockup">
+                <img src="" alt="Pacote Completo" class="final-mockup" id="final-mockup">
             </div>
 
             <div class="final-price-container">
@@ -113,8 +112,7 @@
             <a href="#" class="cta-button final-cta" id="final-cta"></a>
 
             <div class="security-badges final-badges">
-                <img src="media/SITE-SEGURO-img-4946748-20230607164804.webp" alt="Site Seguro"
-                    class="payment-methods-img">
+                <img src="" alt="Site Seguro" class="payment-methods-img" id="final-badge-security">
             </div>
 
             <p class="final-footer-text" id="final-footer"></p>
@@ -136,12 +134,15 @@
                 // Hero
                 $('#hero-title').html(data.hero.title);
                 $('#hero-subtitle').html(data.hero.subtitle);
+                $('#hero-img').attr('src', data.hero.image);
 
                 // Offer
                 $('#offer-old-price').text(data.offer.old_price);
                 $('#offer-price-label').text(data.offer.price_label);
                 $('#offer-current-price').text(data.offer.current_price);
                 $('#offer-cta').html(data.offer.cta + iconArrowRight);
+                $('#offer-badge-security').attr('src', data.offer.badges.security);
+                $('#offer-badge-guarantee').attr('src', data.offer.badges.guarantee);
 
                 // Features
                 $('#features-title').text(data.features.title);
@@ -183,13 +184,14 @@
                 // Bonus
                 $('#bonus-title').text(data.bonus.title);
                 $('#bonus-subtitle').html(data.bonus.subtitle);
+                $('#bonus-gift-img').attr('src', data.bonus.gift_image);
 
                 const $bonusGrid = $('#bonus-grid');
                 $bonusGrid.empty();
                 $.each(data.bonus.cards, function (index, card) {
                     $bonusGrid.append(`
                         <div class="bonus-card">
-                            <img src="media/BARBEARIA-LUCRATIVA-1.png" class="bonus-img" alt="Bônus ${index + 1}">
+                            <img src="${card.image}" class="bonus-img" alt="Bônus ${index + 1}">
                             <div class="bonus-content">
                                 <h3 class="bonus-card-title">${card.title}</h3>
                                 <p class="bonus-card-desc">${card.description}</p>
@@ -208,6 +210,8 @@
                 $('#final-price').text(data.final_call.price_value);
                 $('#final-cta').html(data.final_call.cta + iconArrowRight);
                 $('#final-footer').html(data.final_call.footer);
+                $('#final-mockup').attr('src', data.final_call.image);
+                $('#final-badge-security').attr('src', data.offer.badges.security); // Reusing security badge
 
                 const $finalList = $('#final-list');
                 $finalList.empty();

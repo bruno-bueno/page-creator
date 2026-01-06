@@ -1,13 +1,18 @@
 {
     "hero": {
         "title": "<span class=\"highlight\">75 Aulas Prontas</span> de Boxe – Do <br> Zero ao Avançado",
-        "subtitle": "Copie e aplique as 75 aulas prontas de Boxe e nunca mais perca horas <br> montando treinos repetitivos e sem graça."
+        "subtitle": "Copie e aplique as 75 aulas prontas de Boxe e nunca mais perca horas <br> montando treinos repetitivos e sem graça.",
+        "image": "media/BARBEARIA-LUCRATIVA-1024x576.png"
     },
     "offer": {
         "old_price": "DE R$79,90",
         "price_label": "POR APENAS",
         "current_price": "R$10",
-        "cta": "QUERO APROVEITAR"
+        "cta": "QUERO APROVEITAR",
+        "badges": {
+            "security": "media/SITE-SEGURO-img-4946748-20230607164804.webp",
+            "guarantee": "media/selo-garantia-300x300-1-1.webp"
+        }
     },
     "features": {
         "title": "Veja tudo o que você vai receber",
@@ -57,36 +62,42 @@
     "bonus": {
         "title": "Leve 4 Presentes Incríveis",
         "subtitle": "Comprando hoje, você não só leva as 75 aulas, mas também um pacote de bônus para acelerar seus resultados. <br><span class=\"highlight-red\">(SOMENTE NESTA PÁGINA!)</span>",
+        "gift_image": "media/wrapped-gift_1f381-1.png",
         "cards": [
             {
                 "title": "Bônus 1: 30 Combinações Secretas",
                 "description": "Sequências prontas para deixar seus treinos mais dinâmicos.",
                 "price_from": "De: R$39,90",
-                "price_free": "Por: Grátis"
+                "price_free": "Por: Grátis",
+                "image": "media/BARBEARIA-LUCRATIVA-1.png"
             },
             {
                 "title": "Bônus 2: 30 Combinações Secretas",
                 "description": "Sequências prontas para deixar seus treinos mais dinâmicos.",
                 "price_from": "De: R$39,90",
-                "price_free": "Por: Grátis"
+                "price_free": "Por: Grátis",
+                "image": "media/BARBEARIA-LUCRATIVA-1.png"
             },
             {
                 "title": "Bônus 3: 30 Combinações Secretas",
                 "description": "Sequências prontas para deixar seus treinos mais dinâmicos.",
                 "price_from": "De: R$39,90",
-                "price_free": "Por: Grátis"
+                "price_free": "Por: Grátis",
+                "image": "media/BARBEARIA-LUCRATIVA-1.png"
             },
             {
                 "title": "Bônus 4: 30 Combinações Secretas",
                 "description": "Sequências prontas para deixar seus treinos mais dinâmicos.",
                 "price_from": "De: R$39,90",
-                "price_free": "Por: Grátis"
+                "price_free": "Por: Grátis",
+                "image": "media/BARBEARIA-LUCRATIVA-1.png"
             }
         ]
     },
     "final_call": {
         "title": "ADQUIRA HOJE MESMO",
         "urgency": "ÚLTIMO DIA janeiro 2, 2026",
+        "image": "media/BARBEARIA-LUCRATIVA-1024x576.png",
         "list": [
             "75 Aulas Prontas de Boxe",
             "Passo a passo de cada golpe",
