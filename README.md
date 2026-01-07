@@ -1,34 +1,63 @@
-# 📄 Page Generator - Landing Pages Dinâmicas
+# 📄 Page Generator -# Gerador de Landing Pages Dinâmico
 
-Este projeto é um **template universal de Landing Page** de alta conversão. A estrutura foi desenhada para permitir que qualquer pessoa crie uma página de vendas completa apenas editando um arquivo de configuração simples e trocando imagens, sem tocar em HTML.
+Este projeto é um template de Landing Page de alta conversão, totalmente editável através de um arquivo de configuração JSON. Você não precisa editar HTML ou CSS para alterar textos, imagens, links, preços ou ID do Pixel.
 
-## 🎯 Conceito do Projeto
-A ideia é simples:
-1. **Baixe** este repositório.
-2. **Edite** o arquivo `copy.json` com seus textos e caminhos de imagem.
-3. **Pronto!** Sua página está criada.
+O projeto foi reorganizado em dois exemplos para facilitar o uso:
 
-Precisa mudar cores, fontes ou layout? Peça para sua IA de preferência (como o Antigravity!) ajustar o `styles.css`. O código é limpo e modular, facilitando essas customizações.
+## Estruturas de Exemplo
 
----
+### 1. Simple Example (`/simple example`)
+A versão padrão e direta.
+- **Como usar:** Edite o arquivo `copy.json`.
+- **Ideal para:** Quem precisa de uma página única, rápida e sem complexidade de múltiplos idiomas.
+- **Funcionalidades:**
+  - Carregamento de conteúdo via `copy.json`.
+  - Integração fácil com Pixel do Facebook (basta colocar o ID no JSON).
 
-## 🚀 Como Rodar
+### 2. Multi-language Example (`/multi-language example`)
+A versão avançada com suporte a múltiplos idiomas.
+- **Como usar:**
+  - O sistema detecta automaticamente o idioma do navegador do visitante (ex: `pt-BR`, `en-US`).
+  - Tenta carregar o arquivo correspondente na pasta `/languages` (ex: `languages/pt-BR.json`).
+  - Se não encontrar, carrega automaticamente o arquivo `default.json` como fallback.
+- **Estrutura de Arquivos:**
+  - `default.json`: Configuração padrão/fallback.
+  - `languages/`: Pasta para adicionar novos idiomas (ex: `es.json`, `fr.json`).
 
-Devido à segurança dos navegadores modernos (que bloqueiam carregamento de arquivos JSON locais), você **precisa de um servidor local** para ver a página funcionando.
+## Funcionalidades Globais
 
-### Usando VS Code (Recomendado)
-1. Instale a extensão **Live Server**.
-2. Clique com o botão direito em `nova_pagina.html`.
-3. Escolha **"Open with Live Server"**.
+### 🎨 Customização Fácil
+Tudo é controlado pelos arquivos JSON (`copy.json` ou `default.json`):
+- **Hero:** Título, subtítulo, imagem.
+- **Oferta:** Preços (De/Por), badge de garantia, link de checkout.
+- **Pixel do Facebook:** Basta adicionar seu ID no campo `"facebook_pixel_id"`.
+- **Seções:** Benefícios, Público-Alvo, Depoimentos, Bônus, Chamada Final.
 
----
+### 📱 100% Responsivo
+O layout se adapta perfeitamente a celulares, tablets e desktops.
 
-## 🛠 Como Personalizar (Passo a Passo)
+### ⚡ Instalação
+Não requer instalação de dependências (Node.js, etc) para rodar a versão final.
+1. Baixe os arquivos.
+2. Abra a pasta do exemplo desejado.
+3. Edite o JSON.
+4. Hospede os arquivos em qualquer servidor estático (Vercel, Netlify, Apache, Nginx) ou abra localmente.
 
-### 1. Texto e Imagens (`copy.json`)
-Abra o arquivo `copy.json`. Ele contém todo o conteúdo do site.
-- **Imagens**: Coloque suas imagens na pasta `media/` e atualize os caminhos no JSON (ex: `"image": "media/minha-foto.png"`).
-- **Textos**: Altere títulos, descrições, preços e itens de lista diretamente nas linhas de texto. HTML básico (como `<br>` e `<span>`) é aceito para formatação.
+> **Nota:** Para testar localmente (no seu computador), o navegador pode bloquear o carregamento do JSON por segurança (CORS). Recomendamos usar uma extensão como "Live Server" no VS Code.
+
+## Exemplo de Configuração (JSON)
+```json
+{
+    "checkout_url": "https://seu-link-de-checkout.com",
+    "facebook_pixel_id": "123456789",
+    "hero": {
+        "title": "Seu Título Principal",
+        "subtitle": "Seu subtítulo matador...",
+        "image": "media/sua-imagem.png"
+    }
+    // ... restante da configuração
+}
+```
 
 ### 2. Estilização (`styles.css`)
 O design visual está isolado no arquivo `styles.css`.

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>75 Aulas de Boxe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <header class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <h1 class="main-title" id="hero-title"></h1>
+            <p class="subtitle" id="hero-subtitle"></p>
+
+            <div class="mockup-container">
+                <img src="" alt="Hero Image" class="mockup-img" id="hero-img">
+            </div>
+        </div>
+    </header>
+
+    <section class="offer-section">
+        <div class="container">
+            <div class="price-container">
+                <span class="old-price" id="offer-old-price"></span>
+                <span class="price-label" id="offer-price-label"></span>
+                <span class="current-price" id="offer-current-price"></span>
+            </div>
+
+            <a href="#" class="cta-button" id="offer-cta"></a>
+
+            <div class="security-badges">
+                <img src="" alt="Site Seguro" class="payment-methods-img" id="offer-badge-security">
+                <img src="" alt="Garantia" class="guarantee-seal-img" id="offer-badge-guarantee">
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title" id="features-title"></h2>
+            <p class="section-subtitle" id="features-subtitle"></p>
+
+            <ul class="features-list" id="features-list">
+                <!-- Items will be populated by JS -->
+            </ul>
+
+            <a href="#" class="cta-button cta-features" id="features-cta"></a>
+        </div>
+    </section>
+
+    <section class="target-section">
+        <div class="container" style="padding: 0;">
+            <h2 class="section-title target-title" id="target-title"></h2>
+            <p class="section-subtitle target-subtitle" id="target-subtitle"></p>
+
+            <div class="target-grid" id="target-grid">
+                <!-- Cards populated by JS -->
+            </div>
+
+            <a href="#" class="cta-button cta-target" id="target-cta"></a>
+
+            <p class="target-disclaimer" id="target-disclaimer"></p>
+        </div>
+    </section>
+
+
+
+    <section class="bonus-section">
+        <div class="container">
+            <div class="gift-container">
+                <img src="" alt="Bônus" class="gift-img" id="bonus-gift-img">
+            </div>
+            <h2 class="section-title bonus-title" id="bonus-title"></h2>
+            <p class="section-subtitle bonus-subtitle" id="bonus-subtitle"></p>
+
+            <div class="bonus-grid" id="bonus-grid">
+                <!-- Bonuses populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section class="final-call-section">
+        <div class="container" style="padding: 0px;">
+            <h2 class="final-title" id="final-title"></h2>
+
+            <div class="urgency-bar">
+                <span id="urgency-text"></span>
+            </div>
+
+            <div class="divider-arrow">
+                <span class="arrow-chevron"></span>
+            </div>
+
+            <ul class="final-list" id="final-list">
+                <!-- Populated by JS -->
+            </ul>
+
+            <div class="final-mockup-container">
+                <img src="" alt="Pacote Completo" class="final-mockup" id="final-mockup">
+            </div>
+
+            <div class="final-price-container">
+                <span class="final-price-value" id="final-price"></span>
+            </div>
+
+            <a href="#" class="cta-button final-cta" id="final-cta"></a>
+
+            <div class="security-badges final-badges">
+                <img src="" alt="Site Seguro" class="payment-methods-img" id="final-badge-security">
+            </div>
+
+            <p class="final-footer-text" id="final-footer"></p>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container" style="padding: 0;">
+            <h2 class="section-title" id="testimonials-title"></h2>
+            <p class="testimonials-subtitle" id="testimonials-subtitle"></p>
+
+            <div class="testimonials-list" id="testimonials-list">
+                <!-- Populated by JS -->
+            </div>
+
+            <a href="#" class="cta-button cta-testimonials" id="testimonials-cta"></a>
+        </div>
+    </section>
+
+    <section class="guarantee-section">
+        <div class="container">
+            <div class="guarantee-img-container">
+                <img src="" alt="Garantia Incondicional" id="guarantee-main-img" class="guarantee-main-img">
+            </div>
+            <h2 class="guarantee-title" id="guarantee-main-title"></h2>
+            <h3 class="guarantee-subtitle" id="guarantee-main-subtitle"></h3>
+            <div class="guarantee-content" id="guarantee-main-text">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-details-section">
+        <div class="container">
+            <h2 class="footer-details-text" id="footer-details-text"></h2>
+
+            <a href="#" class="cta-button footer-details-cta" id="footer-details-cta"></a>
+
+            <p class="footer-disclaimer" id="footer-disclaimer"></p>
+
+            <div class="footer-divider-line"></div>
+
+            <p class="footer-support" id="footer-support"></p>
+
+            <div class="footer-links" id="footer-links">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        $(document).ready(function () {
+            // Icons
+            const iconArrowRight = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px; vertical-align: middle;"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`;
+            const iconCheck = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg>`; // Green check
+            // Orange Circle Check for Features (Matches uploaded image style)
+            const iconFeatureCheck = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E55A18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 12px; flex-shrink: 0;"><circle cx="12" cy="12" r="10"/><polyline points="16 9 10 15 8 13"/></svg>`;
+
+            const iconGift = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc3545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; flex-shrink: 0;"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></svg>`; // Red gift
+
+            function renderPage(data) {
+                // Facebook Pixel
+                if (data.facebook_pixel_id) {
+                    !function (f, b, e, v, n, t, s) {
+                        if (f.fbq) return; n = f.fbq = function () {
+                            n.callMethod ?
+                                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                        };
+                        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                        n.queue = []; t = b.createElement(e); t.async = !0;
+                        t.src = v; s = b.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t, s)
+                    }(window, document, 'script',
+                        'https://connect.facebook.net/en_US/fbevents.js');
+                    fbq('init', data.facebook_pixel_id);
+                    fbq('track', 'PageView');
+                }
+
+                // Global Checkout URL
+                $('.cta-button').attr('href', data.checkout_url);
+
+                // Hero
+                $('#hero-title').html(data.hero.title);
+                $('#hero-subtitle').html(data.hero.subtitle);
+                $('#hero-img').attr('src', data.hero.image);
+
+                // Offer
+                $('#offer-old-price').text(data.offer.old_price);
+                $('#offer-price-label').text(data.offer.price_label);
+                $('#offer-current-price').text(data.offer.current_price);
+                $('#offer-cta').html(data.offer.cta + iconArrowRight);
+                $('#offer-badge-security').attr('src', data.offer.badges.security);
+                $('#offer-badge-guarantee').attr('src', data.offer.badges.guarantee);
+
+                // Features
+                $('#features-title').text(data.features.title);
+                $('#features-subtitle').text(data.features.subtitle);
+                $('#features-cta').html(data.features.cta + iconArrowRight);
+
+                const $featuresList = $('#features-list');
+                $featuresList.empty();
+                $.each(data.features.list, function (index, feature) {
+                    $featuresList.append(
+                        // Use iconFeatureCheck here
+                        `<li style="display: flex; align-items: start; margin-bottom: 12px;">${iconFeatureCheck}<span class="feature-text">${feature}</span></li>`
+                    );
+                });
+
+                // Target
+                $('#target-title').text(data.target.title);
+                $('#target-subtitle').text(data.target.subtitle);
+                $('#target-cta').html(data.target.cta + iconArrowRight);
+                $('#target-disclaimer').html(data.target.disclaimer);
+
+                const $targetGrid = $('#target-grid');
+                $targetGrid.empty();
+                $.each(data.target.cards, function (index, card) {
+                    $targetGrid.append(`
+                        <div class="target-card">
+                            <div class="target-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                    <circle cx="12" cy="12" r="10" stroke="#E55A18" stroke-width="2" />
+                                    <polyline points="16 9 10 15 8 13" stroke="#E55A18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="target-card-title">${card.title}</h3>
+                            <p class="target-card-desc">${card.description}</p>
+                        </div>
+                    `);
+                });
+
+                // Testimonials
+                $('#testimonials-title').html(data.testimonials.title);
+                $('#testimonials-subtitle').text(data.testimonials.subtitle);
+                $('#testimonials-cta').html(data.testimonials.cta + iconArrowRight);
+
+                const $testimonialsList = $('#testimonials-list');
+                $testimonialsList.empty();
+                $.each(data.testimonials.list, function (index, item) {
+                    // Placeholder for avatar if empty
+                    const avatarSrc = item.image ? item.image : "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541";
+
+                    // Simple logic for reaction icons similar to FB
+                    const reactionIcons = `
+                        <div class="comment-reactions">
+                             <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231877F2'%3E%3Cpath d='M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3'/%3E%3C/svg%3E" class="reaction-icon like">
+                             <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23F23E5C'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E" class="reaction-icon heart">
+                             <span class="reaction-count">${item.likes}</span>
+                        </div>
+                    `;
+
+                    $testimonialsList.append(`
+                        <div class="comment-item">
+                            <div class="comment-avatar">
+                                <img src="${avatarSrc}" alt="${item.name}">
+                            </div>
+                            <div class="comment-content-wrapper">
+                                <div class="comment-bubble">
+                                    <div class="comment-name">${item.name}</div>
+                                    <div class="comment-text">${item.text}</div>
+                                    ${reactionIcons}
+                                </div>
+                                <div class="comment-actions">
+                                    <span>Curtir</span>
+                                    <span>Responder</span>
+                                    <span class="comment-time">${item.time}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `);
+                });
+
+                // Guarantee Section (Main)
+                $('#guarantee-main-img').attr('src', data.guarantee_section.image);
+                $('#guarantee-main-title').html(data.guarantee_section.title);
+                $('#guarantee-main-subtitle').html(data.guarantee_section.subtitle);
+
+                const $guaranteeText = $('#guarantee-main-text');
+                $guaranteeText.empty();
+                $.each(data.guarantee_section.text, function (index, paragraph) {
+                    $guaranteeText.append(`<p>${paragraph}</p>`);
+                });
+
+                // Footer Details
+                $('#footer-details-text').html(data.footer_details.text);
+                $('#footer-details-cta').html(data.footer_details.cta + iconArrowRight);
+                $('#footer-disclaimer').text(data.footer_details.disclaimer);
+                $('#footer-support').text(data.footer_details.support);
+
+                const $footerLinks = $('#footer-links');
+                $footerLinks.empty();
+                $.each(data.footer_details.links, function (index, link) {
+                    $footerLinks.append(`<a href="${link.url}">${link.text}</a>`);
+                });
+
+                // Bonus
+                $('#bonus-title').text(data.bonus.title);
+                $('#bonus-subtitle').html(data.bonus.subtitle);
+                $('#bonus-gift-img').attr('src', data.bonus.gift_image);
+
+                const $bonusGrid = $('#bonus-grid');
+                $bonusGrid.empty();
+                $.each(data.bonus.cards, function (index, card) {
+                    $bonusGrid.append(`
+                        <div class="bonus-card">
+                            <img src="${card.image}" class="bonus-img" alt="Bônus ${index + 1}">
+                            <div class="bonus-content">
+                                <h3 class="bonus-card-title">${card.title}</h3>
+                                <p class="bonus-card-desc">${card.description}</p>
+                                <div class="bonus-price">
+                                    <span class="price-from">${card.price_from}</span>
+                                    <span class="price-free">${card.price_free}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `);
+                });
+
+                // Final Call
+                $('#final-title').text(data.final_call.title);
+                $('#urgency-text').text(data.final_call.urgency);
+                $('#final-price').text(data.final_call.price_value);
+                $('#final-cta').html(data.final_call.cta + iconArrowRight);
+                $('#final-footer').html(data.final_call.footer);
+                $('#final-mockup').attr('src', data.final_call.image);
+                $('#final-badge-security').attr('src', data.offer.badges.security); // Reusing security badge
+
+                const $finalList = $('#final-list');
+                $finalList.empty();
+                $.each(data.final_call.list, function (index, item) {
+                    $finalList.append(
+                        `<li class="final-item">${iconCheck}<span>${item}</span></li>`
+                    );
+                });
+                $.each(data.final_call.bonuses, function (index, item) {
+                    $finalList.append(
+                        `<li class="final-item bonus-item">${iconGift}<span>${item}</span></li>`
+                    );
+                });
+            }
+
+            // --- Multi-language Logic ---
+            const userLang = navigator.language || navigator.userLanguage; // e.g. "pt-BR", "en-US"
+            console.log("Detected language:", userLang);
+
+            // Attempt to load the specific language JSON
+            $.getJSON(`languages/${userLang}.json`, function (data) {
+                console.log(`Loaded configuration for: ${userLang}`);
+                renderPage(data);
+            }).fail(function () {
+                console.warn(`Could not load languages/${userLang}.json. Falling back to copy.json (default).`);
+
+                // Fallback to default copy.json
+                $.getJSON('default.json', function (data) {
+                    console.log("Loaded default configuration.");
+                    renderPage(data);
+                }).fail(function (jqxhr, textStatus, error) {
+                    console.error('Error loading default copy:', error);
+                    alert('Erro crítico: Não foi possível carregar copy.json nem o arquivo de idioma específico.');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

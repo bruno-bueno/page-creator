@@ -1,0 +1,174 @@
+{
+    "checkout_url": "https://go.perfectpay.com.br/PPU38CPRGSA",
+    "facebook_pixel_id": "",
+    "hero": {
+        "title": "<span class=\"highlight\">75 Ready-to-Use</span> Boxing Classes – From <br> Zero to Advanced",
+        "subtitle": "Copy and apply 75 ready-made Boxing classes and never waste hours <br> creating repetitive and boring workouts again.",
+        "image": "media/BARBEARIA-LUCRATIVA-1024x576.png"
+    },
+    "offer": {
+        "old_price": "FROM $79.90",
+        "price_label": "FOR ONLY",
+        "current_price": "$10",
+        "cta": "GET IT NOW",
+        "badges": {
+            "security": "media/SITE-SEGURO-img-4946748-20230607164804.webp",
+            "guarantee": "media/selo-garantia-300x300-1-1.webp"
+        }
+    },
+    "features": {
+        "title": "See everything you will receive",
+        "subtitle": "Secure your access today and transform your boxing classes with high-quality content, ready to use.",
+        "list": [
+            "75 Ready-to-Use Boxing Classes – From Zero to Advanced",
+            "Adaptation for classes without equipment and in small spaces.",
+            "Step-by-step guide on how to apply each move.",
+            "Specific plans for beginners, intermediates, and advanced students.",
+            "Strategies to manage up to 15 students without losing control.",
+            "100% Digital and Lifetime Access."
+        ],
+        "cta": "GET IT NOW"
+    },
+    "target": {
+        "title": "WHO ARE THE 75 READY CLASSES FOR?",
+        "subtitle": "No matter your level or goal, our material was designed to suit everyone.",
+        "cards": [
+            {
+                "title": "Complete Beginners",
+                "description": "People who have never practiced boxing and want to start from scratch at home, safely."
+            },
+            {
+                "title": "Evolving Students",
+                "description": "Beginners who need a simple step-by-step guide to progress."
+            },
+            {
+                "title": "Optimized Teachers",
+                "description": "Teachers and personal trainers who don't want to waste hours planning classes."
+            },
+            {
+                "title": "Creative Instructors",
+                "description": "Tired of always repeating the same workouts and looking for variety."
+            },
+            {
+                "title": "Busy Practitioners",
+                "description": "Want adapted workouts ready to apply anywhere."
+            },
+            {
+                "title": "Any Level",
+                "description": "Practitioners of any level who want adapted workouts ready to apply."
+            }
+        ],
+        "cta": "GET IT NOW",
+        "disclaimer": "Following the course, you <strong>do NOT need:</strong> experience, expensive equipment, or to spend hours working"
+    },
+    "testimonials": {
+        "title": "WHAT OUR STUDENTS <span class=\"highlight-orange\">ARE SAYING</span>",
+        "subtitle": "Showing 10 comments",
+        "list": [
+            {
+                "name": "Rodrigo Silva",
+                "text": "I used to spend hours racking my brain to create a new class. Now I just open the material and apply it. My students are more excited, and I can give twice as many classes in the same time.",
+                "time": "now",
+                "likes": 24,
+                "image": ""
+            },
+            {
+                "name": "Carlos Rosa",
+                "text": "I was out of ideas to vary functional boxing workouts. The 75 classes solved that instantly! I saved time and even increased my classes. Worth every penny.",
+                "time": "6 min",
+                "likes": 12,
+                "image": ""
+            },
+            {
+                "name": "Márcio Lira",
+                "text": "Very practical material and straight to the point. It helped me a lot to organize the week's classes.",
+                "time": "15 min",
+                "likes": 8,
+                "image": ""
+            }
+        ],
+        "cta": "GET IT NOW"
+    },
+    "guarantee_section": {
+        "image": "media/selo-garantia-300x300-1-1.webp",
+        "title": "PRODUCT WITH <br> ZERO RISK!",
+        "subtitle": "THE COURSE HAS A <br> 30-DAY UNCONDITIONAL GUARANTEE",
+        "text": [
+            "You are protected by the <strong>Consumer Protection Code</strong>.",
+            "If for any reason you think this is not for you or you don't adapt, just contact us (Email: contact@75boxingclasses.shop) <strong>within 30 days</strong> and request a full refund of the amount invested.",
+            "You will receive back every penny you paid."
+        ]
+    },
+    "footer_details": {
+        "text": "CLICK THE BUTTON BELOW <br> TO GUARANTEE <span class=\"highlight-red\">THE COURSE <br> WITH 89% OFF!</span>",
+        "cta": "GET IT NOW",
+        "disclaimer": "This site is not affiliated with Facebook or any Facebook entity. After you leave Facebook, the responsibility is not theirs but ours.",
+        "support": "Support: contact@75boxingclasses.shop",
+        "links": [
+            {
+                "text": "Privacy Policy",
+                "url": "#"
+            },
+            {
+                "text": "Terms of Use",
+                "url": "#"
+            }
+        ]
+    },
+    "bonus": {
+        "title": "Get 4 Amazing Gifts",
+        "subtitle": "Buying today, you not only get the 75 classes but also a bonus package to accelerate your results. <br><span class=\"highlight-red\">(ONLY ON THIS PAGE!)</span>",
+        "gift_image": "media/wrapped-gift_1f381-1.png",
+        "cards": [
+            {
+                "title": "Bonus 1: 30 Secret Combinations",
+                "description": "Ready-made sequences to make your workouts more dynamic.",
+                "price_from": "From: $39.90",
+                "price_free": "For: Free",
+                "image": "media/BARBEARIA-LUCRATIVA-1.png"
+            },
+            {
+                "title": "Bonus 2: 30 Secret Combinations",
+                "description": "Ready-made sequences to make your workouts more dynamic.",
+                "price_from": "From: $39.90",
+                "price_free": "For: Free",
+                "image": "media/BARBEARIA-LUCRATIVA-1.png"
+            },
+            {
+                "title": "Bonus 3: 30 Secret Combinations",
+                "description": "Ready-made sequences to make your workouts more dynamic.",
+                "price_from": "From: $39.90",
+                "price_free": "For: Free",
+                "image": "media/BARBEARIA-LUCRATIVA-1.png"
+            },
+            {
+                "title": "Bonus 4: 30 Secret Combinations",
+                "description": "Ready-made sequences to make your workouts more dynamic.",
+                "price_from": "From: $39.90",
+                "price_free": "For: Free",
+                "image": "media/BARBEARIA-LUCRATIVA-1.png"
+            }
+        ]
+    },
+    "final_call": {
+        "title": "GET IT TODAY",
+        "urgency": "LAST DAY January 2, 2026",
+        "image": "media/BARBEARIA-LUCRATIVA-1024x576.png",
+        "list": [
+            "75 Ready-to-Use Boxing Classes",
+            "Step-by-step for each move",
+            "Adaptation for classes without equipment",
+            "100% Digital and Lifetime Access",
+            "30-day guarantee"
+        ],
+        "bonuses": [
+            "<strong>Bonus 1:</strong> 30 Secret Combinations",
+            "<strong>Bonus 2:</strong> 50 Legendary Moves",
+            "<strong>Bonus 3:</strong> 25 Explosive Warm-ups",
+            "<strong>Bonus 4:</strong> Certificate of Completion"
+        ],
+        "price_value": "$10",
+        "cta": "GET IT NOW",
+        "footer": "<strong>ENJOY NOW:</strong> You will <u>NOT find</u><br> this price later."
+    }
+}
