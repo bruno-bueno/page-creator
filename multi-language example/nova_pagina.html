@@ -360,25 +360,50 @@
             }
 
             // --- Multi-language Logic ---
+            // --- Multi-language Logic ---
             const userLang = navigator.language || navigator.userLanguage; // e.g. "pt-BR", "en-US"
             console.log("Detected language:", userLang);
 
-            // Attempt to load the specific language JSON
-            $.getJSON(`languages/${userLang}.json`, function (data) {
-                console.log(`Loaded configuration for: ${userLang}`);
-                renderPage(data);
-            }).fail(function () {
-                console.warn(`Could not load languages/${userLang}.json. Falling back to copy.json (default).`);
-
-                // Fallback to default copy.json
-                $.getJSON('default.json', function (data) {
-                    console.log("Loaded default configuration.");
-                    renderPage(data);
-                }).fail(function (jqxhr, textStatus, error) {
-                    console.error('Error loading default copy:', error);
-                    alert('Erro crítico: Não foi possível carregar copy.json nem o arquivo de idioma específico.');
+            function loadContent(url) {
+                return new Promise((resolve, reject) => {
+                    $.getJSON(url, data => resolve(data)).fail(err => reject(err));
                 });
-            });
+            }
+
+            // 1. Try specific language (e.g., "en-US")
+            loadContent(`languages/${userLang}.json`)
+                .then(data => {
+                    console.log(`Loaded specific configuration for: ${userLang}`);
+                    renderPage(data);
+                })
+                .catch(() => {
+                    // 2. If specific fails, try generic language (e.g., "en" from "en-US")
+                    const genericLang = userLang.split('-')[0];
+                    if (userLang !== genericLang) {
+                        console.warn(`Could not load languages/${userLang}.json. Trying generic: ${genericLang}`);
+                        return loadContent(`languages/${genericLang}.json`);
+                    }
+                    return Promise.reject(); // No generic fallback possible
+                })
+                .then(data => {
+                    if (data) {
+                        console.log(`Loaded generic configuration for: ${userLang.split('-')[0]}`);
+                        renderPage(data);
+                    }
+                })
+                .catch(() => {
+                    console.warn("Falling back to default.json");
+                    // 3. Fallback to default
+                    loadContent('default.json')
+                        .then(data => {
+                            console.log("Loaded default configuration.");
+                            renderPage(data);
+                        })
+                        .catch(err => {
+                            console.error('Error loading default copy:', err);
+                            alert('Erro crítico: Não foi possível carregar copy.json nem o arquivo de idioma específico.');
+                        });
+                });
         });
     </script>
 </body>

@@ -15,14 +15,34 @@ A versão padrão e direta.
   - Integração fácil com Pixel do Facebook (basta colocar o ID no JSON).
 
 ### 2. Multi-language Example (`/multi-language example`)
-A versão avançada com suporte a múltiplos idiomas.
-- **Como usar:**
-  - O sistema detecta automaticamente o idioma do navegador do visitante (ex: `pt-BR`, `en-US`).
-  - Tenta carregar o arquivo correspondente na pasta `/languages` (ex: `languages/pt-BR.json`).
-  - Se não encontrar, carrega automaticamente o arquivo `default.json` como fallback.
+A versão avançada com suporte "inteligente" a múltiplos idiomas.
+
+- **Como funciona a detecção:**
+  1. O sistema detecta o idioma do navegador (ex: `pt-BR`, `en-US`, `es-AR`).
+  2. **Tentativa Específica:** Tenta carregar o arquivo exato (ex: `languages/en-US.json`).
+  3. **Tentativa Genérica:** Se falhar, tenta carregar o código geral (ex: `languages/en.json` para qualquer variação de inglês).
+  4. **Fallback:** Se nenhum for encontrado, carrega o `default.json` (Geralmente em Português).
+  
 - **Estrutura de Arquivos:**
-  - `default.json`: Configuração padrão/fallback.
-  - `languages/`: Pasta para adicionar novos idiomas (ex: `es.json`, `fr.json`).
+  - `default.json`: Configuração padrão se nenhum idioma for detectado.
+  - `languages/`: Pasta onde ficam os arquivos de tradução.
+
+#### 🌍 Lista de Códigos de Idiomas
+Para criar novos idiomas, basta criar um arquivo `.json` dentro da pasta `languages/` com o código ISO correspondente. Abaixo os principais códigos:
+
+| Idioma | Nome do Arquivo (Recomendado) | Abrange |
+| :--- | :--- | :--- |
+| **Inglês** | `en.json` | EUA, Reino Unido, Austrália, Canadá, etc. |
+| **Espanhol** | `es.json` | Espanha, México, Argentina, Colômbia, etc. |
+| **Português** | `pt.json` (ou use o default) | Brasil, Portugal, Angola. |
+| **Francês** | `fr.json` | França, Canadá, Bélgica, Suíça. |
+| **Alemão** | `de.json` | Alemanha, Áustria, Suíça. |
+| **Italiano** | `it.json` | Itália, Suíça. |
+| **Chinês** | `zh.json` | China, Singapura, Taiwan. |
+| **Japonês** | `ja.json` | Japão. |
+| **Russo** | `ru.json` | Rússia, Bielorrússia. |
+
+> **Dica:** Você pode ser específico se quiser. Se criar um arquivo `pt-PT.json`, ele será carregado APENAS para usuários de Portugal, enquanto `pt.json` (ou o default) servirá para os demais.
 
 ## Funcionalidades Globais
 

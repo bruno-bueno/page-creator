@@ -1,0 +1,174 @@
+{
+    "checkout_url": "https://go.perfectpay.com.br/PPU38CPRGSA",
+    "facebook_pixel_id": "",
+    "hero": {
+        "title": "<span class=\"highlight\">75 Clases Preparadas</span> de Boxeo – De <br> Cero a Avanzado",
+        "subtitle": "Copia y aplica las 75 clases de boxeo preparadas y nunca vuelvas a perder horas <br> creando entrenamientos repetitivos y sin gracia.",
+        "image": "media/BARBEARIA-LUCRATIVA-1024x576.png"
+    },
+    "offer": {
+        "old_price": "DE R$79,90",
+        "price_label": "POR SOLO",
+        "current_price": "R$10",
+        "cta": "QUIERO APROVECHAR",
+        "badges": {
+            "security": "media/SITE-SEGURO-img-4946748-20230607164804.webp",
+            "guarantee": "media/selo-garantia-300x300-1-1.webp"
+        }
+    },
+    "features": {
+        "title": "Mira todo lo que recibirás",
+        "subtitle": "Asegura tu acceso hoy y transforma tus clases de boxeo con contenido de alta calidad, listo para usar.",
+        "list": [
+            "75 Clases Preparadas de Boxeo – De Cero a Avanzado",
+            "Adaptación para clases sin equipamiento y en espacios pequeños.",
+            "Paso a paso de cómo aplicar cada golpe.",
+            "Planes específicos para principiantes, intermedios y avanzados.",
+            "Estrategias para aplicar con hasta 15 alumnos sin perder el control.",
+            "Acceso 100% Digital y Vitalicio."
+        ],
+        "cta": "QUIERO APROVECHAR"
+    },
+    "target": {
+        "title": "¿A QUIÉN VAN LAS 75 CLASES PREPARADAS?",
+        "subtitle": "No importa tu nivel u objetivo, nuestro material está diseñado para todos.",
+        "cards": [
+            {
+                "title": "Principiantes desde Cero",
+                "description": "Personas que nunca han practicado boxeo y quieren comenzar desde cero en casa, con seguridad."
+            },
+            {
+                "title": "Alumnos en Evolución",
+                "description": "Alumnos principiantes que necesitan una guía paso a paso simple para progresar."
+            },
+            {
+                "title": "Profesores Optimizado",
+                "description": "Profesores y entrenadores personales que no quieren perder horas preparando clases."
+            },
+            {
+                "title": "Instructores Creativos",
+                "description": "Cansados de repetir siempre los mismos entrenamientos y buscar variedad."
+            },
+            {
+                "title": "Practicantes Ocupados",
+                "description": "Quieren entrenamientos adaptados y listos para aplicar en cualquier lugar."
+            },
+            {
+                "title": "Cualquier Nivel",
+                "description": "Practicantes de cualquier nivel que desean entrenamientos adaptados y listos para aplicar."
+            }
+        ],
+        "cta": "QUIERO APROVECHAR",
+        "disclaimer": "Siguiendo el curso, no necesitas <strong>experiencia, materiales caros o pasar horas trabajando</strong>."
+    },
+    "testimonials": {
+        "title": "LO QUE DICEN NUESTROS ESTUDIANTES <span class=\"highlight-orange\">ESTÁN DICIENDO</span>",
+        "subtitle": "Mostrando 10 comentarios",
+        "list": [
+            {
+                "name": "Rodrigo Silva",
+                "text": "Antes pasaba horas rompiéndome la cabeza para crear una nueva clase. Ahora solo abro el material y lo aplico. Mis alumnos están más entusiasmados y puedo dar el doble de clases en el mismo tiempo.",
+                "time": "ahora",
+                "likes": 24,
+                "image": ""
+            },
+            {
+                "name": "Carlos Rosa",
+                "text": "Estaba sin ideas para variar los entrenamientos de boxeo funcional. Las 75 clases lo resolvieron al instante. Ahorré tiempo y aumenté mis grupos. Vale cada centavo.",
+                "time": "6 min",
+                "likes": 12,
+                "image": ""
+            },
+            {
+                "name": "Márcio Lira",
+                "text": "Material muy práctico y directo al punto. Me ayudó mucho a organizar las clases de la semana.",
+                "time": "15 min",
+                "likes": 8,
+                "image": ""
+            }
+        ],
+        "cta": "QUIERO APROVECHAR"
+    },
+    "guarantee_section": {
+        "image": "media/selo-garantia-300x300-1-1.webp",
+        "title": "PRODUCTO CON <br> RIESGO CERO!",
+        "subtitle": "EL CURSO TIENE GARANTÍA <br> INCONDICIONAL DE 30 DÍAS",
+        "text": [
+            "Estás protegido por el <strong>Código de Defensa del Consumidor</strong> – LEY Nº 8.078, de 11 de septiembre de 1990.",
+            "Si por alguna razón consideras que no es para ti o no te adaptas, contáctanos (Email: contacto@75aulasdeboxe.shop) <strong>dentro de los 30 días</strong> y solicita el reembolso total del monto invertido.",
+            "Recibirás de vuelta cada centavo que pagaste."
+        ]
+    },
+    "footer_details": {
+        "text": "HAZ CLIC EN EL BOTÓN DE ABAJO <br> PARA GARANTIZAR <span class=\"highlight-red\">EL CURSO <br> CON 89% DE DESCUENTO!</span>",
+        "cta": "QUIERO APROVECHAR",
+        "disclaimer": "Este sitio no está afiliado a Facebook ni a ninguna entidad de Facebook. Después de salir de Facebook, la responsabilidad no es de ellos sino de nuestro sitio.",
+        "support": "Soporte: contacto@75aulasdeboxe.shop",
+        "links": [
+            {
+                "text": "Política de Privacidad",
+                "url": "#"
+            },
+            {
+                "text": "Términos de Uso",
+                "url": "#"
+            }
+        ]
+    },
+    "bonus": {
+        "title": "Obtén 4 Regalos Increíbles",
+        "subtitle": "Al comprar hoy, no solo obtienes las 75 clases, sino también un paquete de bonos para acelerar tus resultados. <br><span class=\"highlight-red\">(¡SOLO EN ESTA PÁGINA!)</span>",
+        "gift_image": "media/wrapped-gift_1f381-1.png",
+        "cards": [
+            {
+                "title": "Bono 1: 30 Combinaciones Secretas",
+                "description": "Secuencias listas para hacer tus entrenamientos más dinámicos.",
+                "price_from": "De: R$39,90",
+                "price_free": "Por: Gratis",
+                "image": "media/BARBEARIA-LUCRATIVA-1.png"
+            },
+            {
+                "title": "Bono 2: 30 Combinaciones Secretas",
+                "description": "Secuencias listas para hacer tus entrenamientos más dinámicos.",
+                "price_from": "De: R$39,90",
+                "price_free": "Por: Gratis",
+                "image": "media/BARBEARIA-LUCRATIVA-1.png"
+            },
+            {
+                "title": "Bono 3: 30 Combinaciones Secretas",
+                "description": "Secuencias listas para hacer tus entrenamientos más dinámicos.",
+                "price_from": "De: R$39,90",
+                "price_free": "Por: Gratis",
+                "image": "media/BARBEARIA-LUCRATIVA-1.png"
+            },
+            {
+                "title": "Bono 4: 30 Combinaciones Secretas",
+                "description": "Secuencias listas para hacer tus entrenamientos más dinámicos.",
+                "price_from": "De: R$39,90",
+                "price_free": "Por: Gratis",
+                "image": "media/BARBEARIA-LUCRATIVA-1.png"
+            }
+        ]
+    },
+    "final_call": {
+        "title": "ADQUIERE HOY MISMO",
+        "urgency": "ÚLTIMO DÍA enero 2, 2026",
+        "image": "media/BARBEARIA-LUCRATIVA-1024x576.png",
+        "list": [
+            "75 Clases Preparadas de Boxeo",
+            "Paso a paso de cada golpe",
+            "Adaptación para clases sin equipamiento",
+            "Acceso 100% Digital y Vitalicio",
+            "30 días de garantía"
+        ],
+        "bonuses": [
+            "<strong>Bono 1:</strong> 30 Combinaciones Secretas",
+            "<strong>Bono 2:</strong> 50 Golpes Legendarios",
+            "<strong>Bono 3:</strong> 25 Calentamientos Explosivos",
+            "<strong>Bono 4:</strong> Certificado de Finalización"
+        ],
+        "price_value": "R$10",
+        "cta": "QUIERO APROVECHAR",
+        "footer": "<strong>APROVECHA AHORA:</strong> No encontrarás este precio después."
+    }
+}
